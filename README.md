@@ -10,10 +10,15 @@ npm i collectdout
 
 # Usage
 
-Create your plugin:
+Spawn a client that sends the data every 60s to myserver:
 ```javascript
 var Collectd = require('collectdout');
-var plugin = new Collectd(60000, "myserver", 25826).plugin('myapp', 'worker13');
+var client = new Collectd(60000, "myserver", 25826);
+```
+
+Create your plugin instance:
+```javascript
+var plugin = client.plugin('myapp', 'worker13');
 ```
 
 Set gauges, they are averaged within a sampling period:
