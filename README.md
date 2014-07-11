@@ -15,8 +15,9 @@ npm i collectdout
 Spawn a client that sends the data every 60s to myserver:
 ```javascript
 var Collectd = require('collectdout');
-var client = new Collectd(60000, "myserver", 25826);
+var client = new Collectd(60000, "collectd_server", 25826, "my_server");
 ```
+Fourth argument is optional, default is os.hostname()
 
 Create your plugin instance:
 ```javascript
@@ -34,3 +35,5 @@ Manipulate counters:
 plugin.setCounter('if_octets', 'eth0', [0, 0]);
 plugin.addCounter('uptime', '0', 1);
 ```
+
+# Change log
