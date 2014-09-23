@@ -37,3 +37,11 @@ plugin.addCounter('uptime', '0', 1);
 ```
 
 # Change log
+- v0.0.5
+  * Add this changelog
+  * Possibility to send data to more than one server
+- v0.0.4
+  * Fix interval issue
+  * Add optionnal parameter to set hostname
+- v0.0.3
+  * Fix multiple value sending
