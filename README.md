@@ -49,6 +49,10 @@ plugin.addCounter('uptime', '0', 1);
 ```
 
 # Change log
+- v0.0.8
+  * Adding crypto support
+- v0.0.7
+  * Fix counter bug
 - v0.0.6
   * Possibility to send notification
 - v0.0.5
