@@ -1,6 +1,6 @@
 { "name": "collectdout"
 , "description": "Periodically send values out to a Collectd server for statistics"
-, "version": "0.0.8"
+, "version": "0.0.9"
 , "main": "./lib/index.js"
 , "author": "Astro"
 , "homepage": "http://github.com/astro/node-collectdout"
